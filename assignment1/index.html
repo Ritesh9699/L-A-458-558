@@ -130,14 +130,13 @@ body {
     </h1>
         
     <strong>What color do you prefer?</strong> </p>
-    </body>
     
 	<input type="radio" id="color1" name="color" value="blue">Blue<br>
 <input type="radio" id="color2" name="color" value="red">Red<br><br>
 
 <button type="button" onclick="displayFunction()">Display</button>
 <div id="display"></div> 
-    
+    <script>
 
     function displayFunction() {
    var color_value = "";
@@ -147,7 +146,7 @@ body {
   color_value= document.getElementById('color2').value;
    }
 }
-
-    
+</script>
+    </body>
 
 </html>
