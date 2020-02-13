@@ -130,19 +130,24 @@ body {
     </h1>
         
     <strong>What color do you prefer?</strong> </p>
-	
-<input type="radio" id="color1" name="color" value="blue">Blue<br>
+    </body>
+    
+	<input type="radio" id="color1" name="color" value="blue">Blue<br>
 <input type="radio" id="color2" name="color" value="red">Red<br><br>
 
 <button type="button" onclick="displayFunction()">Display</button>
 <div id="display"></div> 
     
-function displayFunction() {
-   if document.getElementById(color1).checked) {
-      color_value = document.getElementById(color1).value;
-   } else if (document.getElementById('color2).checked) { 
-      color_value= document.getElementById('color2 ').value
+
+    function displayFunction() {
+   var color_value = "";
+   if(document.getElementById("color1").checked) {
+  color_value = document.getElementById("color1").value;
+   } else if (document.getElementById("color2").checked) { 
+  color_value= document.getElementById('color2').value;
    }
+}
+
     
-</body>
+
 </html>
